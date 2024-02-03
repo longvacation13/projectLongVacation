@@ -1,0 +1,15 @@
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  openapi:
+    info:
+      title: Sample API
+      description: API documentation for the Sample project
+      version: v0.0.1
+      contact:
+        name: Support Team
+        email: support@longvacation.com
