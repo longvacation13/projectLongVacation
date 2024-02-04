@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Pre-build phase...
+      - chmod +x gradlew
   build:
     commands:
       - echo Build started on `date`
