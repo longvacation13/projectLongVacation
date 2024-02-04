@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+    commands:
+      - echo Install dependencies...
+  pre_build:
+    commands:
+      - echo Pre-build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - ./gradlew build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Uploading the build artifacts...
+
+artifacts:
+  files:
+    - build/libs/*.jar
