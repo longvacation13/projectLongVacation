@@ -22,3 +22,6 @@ phases:
 artifacts:
   files:
     - build/libs/*.jar
+  discard-paths: yes
+  bucket-name: 'ifn-longvacation-bucket' # 내가 생성한 bucket 이름
+  path: 'build-artifacts'
