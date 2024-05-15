@@ -21,6 +21,15 @@ dependencies {
 
     // SpringDoc OpenAPI UI 의존성 추가(swagger)
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+
+    // sqlite
+    runtimeOnly 'org.xerial:sqlite-jdbc:3.34.0'
+    implementation 'org.hibernate:hibernate-core:5.6.3.Final'
+
+    // jdbc datasource
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:3.1.4'
+    implementation 'org.projectlombok:lombok'
+
 }
 
 tasks.named('test') {

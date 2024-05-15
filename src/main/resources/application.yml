@@ -13,3 +13,14 @@ springdoc:
       contact:
         name: Support Team
         email: support@longvacation.com
+
+spring:
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:sqlite:sqlitesample.db
+    driver-class-name: org.sqlite.JDBC
+    username: admin
+    password: admin
